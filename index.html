@@ -6,10 +6,15 @@
   </head>
   <body>
     <header>
-      <div><img src="img/logo.svg" width="109" height="19" alt="Техномарт"></div>
       <div>
-        <a href="">Закладки:</a>
-        <a href="">Корзина:</a>
+        <div><img src="img/logo.svg" width="109" height="19" alt="Техномарт"></div>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <label for="search-field">Поиск</label>
+          <input id="search-field" type="text" name="search">
+          <button type="submit" aria-label="найти">П</button>
+        </form>
+        <a href="">Закладки:0</a>
+        <a href="">Корзина:0</a>
         <a href="">Оформить заказ</a>
       </div>
       <p>
@@ -36,7 +41,7 @@
       </nav>
     </header>
     <main>
-      <h1>Магазин строительных материалов и инструментов для ремонта Техномарт</h1>
+      <h1 class="visually-hidden">Магазин строительных материалов и инструментов для ремонта Техномарт</h1>
       <section>
         <h2>Компания Техномарт</h2>
         <p>
@@ -57,7 +62,7 @@
         <p>Вы можете забрать товары сами, <br>
            заехав в наш офис:
         </p>
-        <img src="img/map1.png" width="300" height="158" alt="Карта в миниатюре">
+        <img src="img/map1.png" width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <a href="">Заблудились? Напишите нам!</a>
       </section>
     </main>
@@ -86,9 +91,9 @@
          Все права защищены
       </p>
       <ul>
-        <li>Вконтакте</li>
-        <li>Фейсбук</li>
-        <li>Инстаграм</li>
+        <li><a href="" aria-label="Техномарт во Вконтакте">В</a></li>
+        <li><a href="" aria-label="Техномарт в Фейсбуке">Ф</a></li>
+        <li><a href="" aria-label="Техномарт в Инстаграме">И</a></li>
       </ul>
       <p>Обратная связь:
         <a href="">mail@htmlacademy.ru</a>
@@ -98,5 +103,33 @@
       </p>
     </div>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться.</h2>
+      <p>
+        <img src="img/map.png" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button type="button" aria-label="Закрыть">Х</button>
+    </section>
+
+
+    <section>
+      <h2 class="visually-hidden">Свяжитесь с нами.</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name-field">Ваше имя:</label>
+          <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-field">Ваш e-mail:</label>
+          <input id="email-field" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="letter-field">Текст письма:</label>
+          <textarea id="letter-field" name="letter" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть">X</button>
+    </section>
   </body>
 </html>
