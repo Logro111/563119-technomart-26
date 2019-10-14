@@ -71,8 +71,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="center_container">
+    <main class="catalog_main">
+      <div class="main_nav_container center_container">
       <h1 class="headline catalog_title">Перфораторы</h1>
       <ul class="breadcrumbs">
         <li  class="home_box"><a class="home" href="index.html" aria-label="Главная"></a></li>
@@ -85,6 +85,20 @@
         <section class="filter_section">
           <h2>Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="price_fieldset">
+              <legend>Цена</legend>
+              <div class="price_range">
+                <div class="scale">
+                  <div class="price_marker"></div>
+                  <div class="price_marker marker_max"></div>
+                </div>
+              </div>
+              <div class="price_fieldset_conteiner">
+                <input class="price_field minimum_price" type="text" name="minimum_price" value="0">
+                <span class="price_separator">—</span>
+                <input class="price_field" type="text" name="maximum_price" value="30000">
+              </div>
+            </fieldset>
             <fieldset>
               <legend>Производители:</legend>
               <ul class="manufacturers_list">
