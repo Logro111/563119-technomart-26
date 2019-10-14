@@ -202,6 +202,7 @@ img {
 
 .catalog_page .cart {
   padding-right: 24px;
+  background-color: #ee3643;
 }
 
 .header_btns .cart::before {
@@ -613,10 +614,21 @@ img {
   padding: 0;
   margin: 0;
   margin-bottom: 41px;
+  position: relative;
 }
 
 .filter fieldset:last-child {
   margin-bottom: 75px;
+}
+
+.filter fieldset:not(:last-of-type)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+  display: block;
+  position: absolute;
+  bottom: -25px;
 }
 
 .filter legend {
