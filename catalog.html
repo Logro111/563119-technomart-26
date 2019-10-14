@@ -71,7 +71,8 @@
         </ul>
       </nav>
     </header>
-    <main class="center_container">
+    <main>
+      <div class="center_container">
       <h1 class="headline catalog_title">Перфораторы</h1>
       <ul class="breadcrumbs">
         <li  class="home_box"><a class="home" href="index.html" aria-label="Главная"></a></li>
@@ -79,53 +80,76 @@
         <li><a href="">Инструмент</a></li>
         <li><a>Перфораторы</a></li>
       </ul>
-      <div class="columns">
+      </div>
+      <div class="columns center_container">
         <section class="filter_section">
-          <h2>Фильтр</h2>
+          <h2>Фильтр:</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Производители:</legend>
-              <ul>
-                <li>
-                  <input class="filter_input visually-hidden" id="filter-bosch" type="checkbox" name="bosch" checked>
+              <ul class="manufacturers_list">
+                <li class="filter_item">
+                  <input class="filter_input checkbox visually-hidden" id="filter-bosch" type="checkbox" name="bosch" checked disabled>
                   <label for="filter-bosch">Bosch</label>
                 </li>
-                <li>
-                  <input class="filter_input visually-hidden" id="filter-interscol" type="checkbox" name="interscol">
+                <li class="filter_item">
+                  <input class="filter_input checkbox visually-hidden" id="filter-interscol" type="checkbox" name="interscol">
                   <label for="filter-interscol">Интерскол</label>
                 </li>
-                <li>
-                  <input class="filter_input visually-hidden" id="filter-makita" type="checkbox" name="makita" checked>
+                <li class="filter_item">
+                  <input class="filter_input checkbox visually-hidden" id="filter-makita" type="checkbox" name="makita" checked>
                   <label for="filter-makita">Makita</label>
                 </li>
-                <li>
-                  <input class="filter_input visually-hidden" id="filter-dewalt" type="checkbox" name="dewalt">
+                <li class="filter_item">
+                  <input class="filter_input checkbox visually-hidden" id="filter-dewalt" type="checkbox" name="dewalt">
                   <label for="filter-dewalt">Dewalt</label>
                 </li>
-                <li>
-                  <input class="filter_input visually-hidden" id="filter-hitachi" type="checkbox" name="hitachi">
+                <li class="filter_item">
+                  <input class="filter_input checkbox visually-hidden" id="filter-hitachi" type="checkbox" name="hitachi">
                   <label for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Питание:</legend>
-              <ul>
-                <li>
-                  <input class="filter_input visually-hidden" id="battery" type="radio" name="power-source" value="battery" checked>
+              <ul class="power_source_list">
+                <li class="filter_item">
+                  <input class="filter_input radio visually-hidden" id="battery" type="radio" name="power-source" value="battery" checked>
                   <label for="battery">Аккумуляторные</label>
                 </li>
-                <li>
-                  <input class="filter_input visually-hidden" id="electricity" type="radio" name="power-source" value="electricity">
+                <li class="filter_item">
+                  <input class="filter_input radio visually-hidden" id="electricity" type="radio" name="power-source" value="electricity">
                   <label for="electricity">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="catalog_btn" type="submit">Показать</button>
+            <button class="filter_btn" type="submit">Показать</button>
           </form>
         </section>
         <section class="product_section">
           <h2 class="visually-hidden">Список товаров</h2>
+          <div class="sorting">
+            <p class="sort">Сортировка:</p>
+            <ul>
+              <li class="price"><a class="price_link active" href="">По цене</a></li>
+              <li class="type"><a href="">По типу</a></li>
+              <li class="functional"><a href="">По функционалу</a></li>
+              <li class="up">
+                <a class="up_link active" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="down">
+                <a class="down_link" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#c5c5c5" d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="product_list">
             <li class="product_card">
               <a class="product_title" href="" aria-label="Перфоратор BOSCH BFG 3000">
@@ -155,7 +179,7 @@
                 <a class="bookmarks_btn" href="">В закладки</a>
               </div>
             </li>
-            <li class="product_card  new_product">
+            <li class="product_card  new">
               <a class="product_title" href="" aria-label="Перфоратор BOSCH BFG 2000">
                 <h3>Перфоратор BOSCH<br>
                   BFG 2000
@@ -182,7 +206,7 @@
                 <a class="bookmarks_btn" href="">В закладки</a>
               </div>
             </li>
-            <li class="product_card  new_product">
+            <li class="product_card  new">
               <a class="product_title" href="" aria-label="Перфоратор BOSCH BFG 6000">
                 <h3>Перфоратор BOSCH<br>
                   BFG 6000
@@ -209,7 +233,7 @@
                 <a class="bookmarks_btn" href="">В закладки</a>
               </div>
             </li>
-            <li class="product_card  new_product">
+            <li class="product_card  new">
               <a class="product_title" href="" aria-label="Перфоратор BOSCH BFG 3000">
                 <h3>Перфоратор BOSCH<br>
                   BFG 3000
@@ -253,6 +277,15 @@
           </ul>
         </section>
       </div>
+      <section class="note">
+        <div class="center_container">
+          <h2 class="headline">Пара слов о перфораторах</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+            ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="main_footer">
       <div class="footer_container center_container">
