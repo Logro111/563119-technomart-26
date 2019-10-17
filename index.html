@@ -336,33 +336,30 @@
           </div>
         </div>
       </footer>
-    <section class="map_popup">
-      <h2 class="visually-hidden">Как до нас добраться.</h2>
-      <p>
-        <img src="img/map.png" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      </p>
-      <button type="button" aria-label="Закрыть">Х</button>
-    </section>
-    <section class="modal_communication">
-      <h2 class="visually-hidden">Свяжитесь с нами.</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email-field">Ваш e-mail:</label>
-          <input id="email-field" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="letter-field">Текст письма:</label>
-          <textarea id="letter-field" name="letter" placeholder="В свободной форме"></textarea>
-        </p>
-        <div class="container">
-          <button class="button" type="submit">Отправить</button>
-        </div>
-      </form>
-      <button type="button" aria-label="Закрыть">X</button>
-    </section>
+      <section class="modal modal_map">
+        <h2 class="visually-hidden">Как до нас добраться.</h2>
+        <img src="img/map.png" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <button class="modal_close" type="button" aria-label="Закрыть"></button>
+      </section>
+      <section class="modal modal_communication">
+        <h2 class="visually-hidden">Свяжитесь с нами.</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal_center_container">
+            <label>Ваше имя:
+              <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+            <label>Ваш e-mail:
+              <input id="email-field" type="text" name="email" placeholder="email@example.com">
+            </label>
+            <label>Текст письма:
+              <textarea id="letter-field" name="letter" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+          <div class="modal_container">
+            <button class="button" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button class="modal_close" type="button" aria-label="Закрыть"></button>
+      </section>
   </body>
 </html>
