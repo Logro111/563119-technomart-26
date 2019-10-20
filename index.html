@@ -21,7 +21,7 @@
             </button>
           </form>
           <div class="header_btns">
-            <a class="bookmarks" href="">Закладки: 0</a>
+            <a class="bookmarks" href="">Закладки: 0 </a>
             <a class="cart" href="">Корзина: 0</a>
             <a class="order" href="">Оформить заказ</a>
           </div>
@@ -34,8 +34,8 @@
           и инструментов для ремонта<br>
         </p>
         <div class="header_contacts">
-          <p class="telephone_number">+7 (812) 555-05-55</p>
-          <p class="header_adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="telephone_number"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+          <p class="header_adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
         </div>
         <ul class="main_user_navigation">
           <li>
@@ -267,8 +267,10 @@
             <p>Вы можете забрать товар сами, <br>
               заехав в наш офис:
             </p>
-            <img src="img/map1.png" width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            <a class="button" href="">Заблудились? Напишите нам!</a>
+            <a class="map_link" href="">
+              <img src="img/map1.png" width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            </a>
+            <a class="button write_us" href="">Заблудились? Напишите нам!</a>
           </section>
         </div>
       </main>
@@ -277,7 +279,7 @@
           <div class="footer_box">
             <div class="logo_box footer_logo_box"><img class="footer_logo_svg"  src="img/footer-logo.svg" width="138" height="23" alt="Техномарт"></div>
             <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-              +7 (812) 555-05-55
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
           </div>
           <div class="nav_container">
@@ -338,6 +340,8 @@
       </footer>
       <section class="modal modal_map">
         <h2 class="visually-hidden">Как до нас добраться.</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571444357351!5m2!1sru!2sru" width="940" height="446" allowfullscreen="">
+        </iframe>
         <img src="img/map.png" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <button class="modal_close" type="button" aria-label="Закрыть"></button>
       </section>
@@ -361,5 +365,7 @@
         </form>
         <button class="modal_close" type="button" aria-label="Закрыть"></button>
       </section>
-  </body>
+      <script src="js/modal_communication.js"></script>
+      <script src="js/modal_map.js"></script>
+    </body>
 </html>
