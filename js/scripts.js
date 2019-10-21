@@ -65,6 +65,20 @@ if ( index ) {
     evt.preventDefault();
     modal_map.classList.remove("modal_shown")
   });
+
+  window.addEventListener("keydown", function(evt) {
+    if ( evt.keyCode === 27 ) {
+      if ( modal_communication.classList.contains("modal_shown") ) {
+        evt.preventDefault();
+        modal_communication.classList.remove("modal_shown");
+        modal_communication.classList.remove("modal_eror");
+      }
+      if ( modal_map.classList.contains("modal_shown")) {
+        evt.preventDefault();
+        modal_map.classList.remove("modal_shown");
+      }
+    }
+  });
 }
 
 var buy_link = document.querySelectorAll(".buy_btn");
@@ -88,4 +102,13 @@ Array.prototype.forEach.call(success_buttons, function(elem){
   elem.addEventListener("click", function (){
     modal_success_buy.classList.remove("modal_shown")
   });
+});
+
+window.addEventListener("keydown", function(evt){
+  if ( evt.keyCode === 27 ) {
+    if ( modal_success_buy.classList.contains("modal_shown") ) {
+      evt.preventDefault();
+      modal_success_buy.classList.remove("modal_shown");
+    }
+  }
 });
