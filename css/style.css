@@ -46,7 +46,7 @@ img {
 }
 
 .catalog_page .main_header {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .header_container .center_container {
@@ -677,7 +677,7 @@ img {
   position: relative;
 
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 42px;
   padding: 0;
 
   font-family: "PT Sans", "Arial", "sans-serif";
@@ -686,7 +686,7 @@ img {
 }
 
 .filter fieldset:last-of-type{
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .filter fieldset:not(:last-of-type)::after {
@@ -1302,7 +1302,7 @@ img {
 }
 
 .note {
-  padding-top: 65px;
+  padding-top: 67px;
   padding-bottom: 69px;
 
   background-color: #f4f7f9;
