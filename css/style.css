@@ -114,7 +114,7 @@ img {
   width: 270px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 49px;
+  padding-left: 48px;
 
   font-size: 17px;
   line-height: 18px;
@@ -216,7 +216,7 @@ img {
 .header_btns .cart {
   position: relative;
 
-  padding: 12px 29px 12px 50px;
+  padding: 12px 30px 12px 49px;
 }
 
 .catalog_page .cart {
@@ -289,8 +289,8 @@ img {
 
 .header_content{
   display: flex;
-  margin-bottom: 38px;
-  padding-left: 53px;
+  margin-bottom: 39px;
+  padding-left: 52px;
 
   background-color: #f4f7f9;
 }
@@ -298,8 +298,8 @@ img {
 .header_description{
   width: 197px;
   margin: 0;
-  margin-right: 71px;
-  padding-top: 2px;
+  margin-right: 72px;
+  padding-top: 3px;
 
   font-style: italic;
   font-size: 16px;
@@ -320,7 +320,7 @@ img {
   position: relative;
 
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   padding: 9px 49px 9px 70px;
 
   font-size: 21px;
@@ -525,7 +525,7 @@ img {
 
 .site_navigation a {
   display: block;
-  padding: 21px 30px 22px 31px;
+  padding: 20px 30px 23px 31px;
 
   font-size: 17px;
   line-height: 17px;
@@ -1108,7 +1108,7 @@ img {
   width: 141px;
   min-height: 38px;
   margin: 0;
-  margin-left: 5px;
+  margin-left: 6px;
   margin-top: auto;
   padding: 10px 30px 11px 25px;
 
@@ -1335,8 +1335,8 @@ img {
 }
 
 .index_main {
-  padding-top: 59px;
-  padding-bottom: 87px;
+  padding-top: 60px;
+  padding-bottom: 86px;
 }
 
 .about_company {
@@ -1360,8 +1360,8 @@ img {
   bottom: 0;
   left: 0;
 
-  padding-left: 64px;
-  padding-right: 59px;
+  padding-left: 65px;
+  padding-right: 58px;
 }
 
 .about_company > p,
@@ -1427,8 +1427,8 @@ img {
   vertical-align: top;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 11px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   line-height: 18px;
@@ -1491,7 +1491,7 @@ img {
 
 .footer_container .nav_container {
   width: 550px;
-  padding-left: 3px;
+  padding-left: 2px;
 }
 
 .footer_container ul {
@@ -1637,7 +1637,7 @@ margin-bottom: 5px;
   width: 300px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 20px 140px 22px 22px;
+  padding: 21px 140px 21px 22px;
 }
 
 .promo_section .vertical_promo_items {
@@ -1870,6 +1870,10 @@ margin-bottom: 5px;
   outline: auto 3px -webkit-focus-ring-color;
 }
 
+.index_main .new::after {
+  background-image: url("../img/index-new-flag.png");
+}
+
 .promo_section .new::after {
   top: 0;
   right: 0;
@@ -1901,7 +1905,7 @@ margin-bottom: 5px;
   max-width: 280px;
 
   padding-left: 69px;
-  padding-right: 70px;
+  padding-right: 69px;
 }
 
 .popular_manufacturers_list {
@@ -1934,9 +1938,22 @@ margin-bottom: 5px;
   border: 1px solid #eaeaea;
 }
 
+.popular_manufacturers_link.interscol {
+  padding-bottom: 16px;
+}
+
+.popular_manufacturers_link.metabo {
+  padding-bottom: 9px;
+  padding-left: 5px;
+}
+
 .popular_manufacturers_list a:active {
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
+}
+
+.popular_products_section {
+  margin-bottom: 2px;
 }
 
 .popular_products_list {
@@ -1961,7 +1978,7 @@ margin-bottom: 5px;
 
 .services_section {
   margin-bottom: 79px;
-  padding-top: 65px;
+  padding-top: 64px;
 
   background-color: #f4f7f9;
 }
@@ -1979,17 +1996,17 @@ margin-bottom: 5px;
   margin-bottom: 26px;
 }
 
-.services_section .intro {
-  margin-bottom: 70px;
-}
-
 .services_container.center_container {
   width: 960px;
 }
 
+.intro_container {
+  margin-bottom: 69px;
+}
+
 .services_container {
   display: flex;
-  padding-bottom: 98px;
+  padding-bottom: 99px;
   padding-left: 10px;
   padding-right: 10px;
 
